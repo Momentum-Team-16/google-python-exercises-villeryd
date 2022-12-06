@@ -47,7 +47,10 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def half_length(string):
-    return int(len(string)/2)
+    if len(string) % 2 == 0:
+        return int(len(string)/2)
+    else:
+        return int(len(string)/2) + 1
 
 
 def slice_front_half(string):
